@@ -1,0 +1,34 @@
+{
+	"name": "kevin021788/crypt",
+	"description": "这是第三方加密，解密的类",
+	"homepage": "https://github.com/kevin021788/crypt",
+	"keywords": [
+		"crypt",
+		"encrypt",
+		"decrypt"
+	],
+	"minimum-stability": "dev",
+	"authors": [ 
+		{
+			"name": "kevin zeng",
+			"email": "kevin0217@126.com",
+			"homepage": "https://github.com/kevin021788",
+			"role": "Developer"
+		}
+	],
+	"license": "MIT",
+	"require": {
+		"php": ">=5.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"kevin021788\\crypt\\": "src/"
+		}
+	},
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
