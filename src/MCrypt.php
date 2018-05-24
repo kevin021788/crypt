@@ -1,5 +1,5 @@
 <?php 
-namespace kevin021788\MCrypt;
+namespace MCrypt\Crypt;
 
   class  MCrypt { 
       const KEY="DASFDSA_ADSF";
