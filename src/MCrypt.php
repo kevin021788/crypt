@@ -55,7 +55,7 @@ namespace MCrypt\Crypt;
        * @param $str
        * @return mixed
        */
-      function enBase64($str)
+      public static function enBase64($str)
       {
           $str = base64_encode($str);
           $str = strtr($str,('/+'),('_-'));
@@ -67,7 +67,7 @@ namespace MCrypt\Crypt;
        * @param $str
        * @return mixed
        */
-      function deBase64($str)
+      public static function deBase64($str)
       {
           $str = strtr($str,('_-'),('/+'));
           $str = base64_decode($str);
