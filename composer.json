@@ -22,7 +22,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"kevin021788\\crypt\\": "src/"
+			"kevin021788\\mcrypt\\": "src/"
 		}
 	},
     "repositories": [
