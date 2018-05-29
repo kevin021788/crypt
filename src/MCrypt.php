@@ -2,13 +2,13 @@
 namespace MCrypt\Crypt;
 
   class  MCrypt { 
-      const KEY="DASFDSA_ADSF";
+      public $key="DASFDSA_ADSF";
       
-      public static function encrypt($string,$key=self::KEY){
+      public static function encrypt($string,$key=$this->key){
           return self::_encrypt($string, "E",$key);
       }
       
-      public static function decrypt($string,$key=self::KEY){
+      public static function decrypt($string,$key=$this->key){
           return self::_encrypt($string, "D",$key);
       }
       
@@ -55,7 +55,7 @@ namespace MCrypt\Crypt;
        * @param $str
        * @return mixed
        */
-      public static function enBase64($str)
+      private static function enBase64($str)
       {
           $str = base64_encode($str);
           $str = strtr($str,('/+'),('_-'));
@@ -67,7 +67,7 @@ namespace MCrypt\Crypt;
        * @param $str
        * @return mixed
        */
-      public static function deBase64($str)
+      private static function deBase64($str)
       {
           $str = strtr($str,('_-'),('/+'));
           $str = base64_decode($str);
