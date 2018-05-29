@@ -2,14 +2,14 @@
 namespace MCrypt\Crypt;
 
   class  MCrypt { 
-      public $key="DASFDSA_ADSF";
+      public static $key="DASFDSA_ADSF";
       
-      public static function encrypt($string,$key=$this->key){
-          return self::_encrypt($string, "E",$key);
+      public static function encrypt($string){
+          return self::_encrypt($string, "E",self::key);
       }
       
-      public static function decrypt($string,$key=$this->key){
-          return self::_encrypt($string, "D",$key);
+      public static function decrypt($string){
+          return self::_encrypt($string, "D",self::key);
       }
       
       private static function _encrypt($string,$operation,$key=''){
