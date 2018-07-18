@@ -1,6 +1,6 @@
 {
 	"name": "kevin021788/crypt",
-	"description": "这是第三方加密，解密的类",
+	"description": "encrypt,decrypt",
 	"homepage": "https://github.com/kevin021788/crypt",
 	"keywords": [
 		"crypt",
