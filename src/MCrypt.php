@@ -2,7 +2,7 @@
 namespace MCrypt\Crypt;
 
   class  MCrypt { 
-      public static $key="DASFDSA_ADSF";
+      public static $key="MACHINE_DODWOW";
       
       public static function encrypt($string){
           return self::_encrypt($string, "E",self::$key);
